@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BI-dashboard</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src= "assets/jquery.gridster.js"></script>
+	<script type="text/javascript" src= "Chart.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel= "stylesheet" type= "text/css" href= "style.css">
+	<link rel = "stylesheet" type = "text/css" href = "assets/css/jquery.gridster.min.css">
+
+</head>
+<body>
+		<header class= "container">
+			<div class = "row">
+				<div class= "col-sm-4">
+					<img src="art/favicon.ico" id = "header-img">
+				</div>
+				<h1 id = "header" class= "center">Blooom Inc. Dashboard</h1>
+			</div>
+		</header>
+		<hr>
+		<div class = "row">
+			<button type="button" class="btn btn-success" id= "add-button"><b>+</b> Add Chart</button>
+		</div>
+		<hr>
+		<div class = "cotainer" id = "chart-area" style ="display:inline-block;">
+			<section class= "demo">
+				<div class="gridster">
+				    <ul>
+				        <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+				        		<div class = "graph span6">
+									<canvas id = "mycanvas-line" width=326 height=240 ></canvas>
+								</div>
+						</li>
+				        <li data-row="1" data-col="2" data-sizex="1" data-sizey="1"></li>
+				        <li data-row="3" data-col="1" data-sizex="1" data-sizey="1"></li>
+
+				        <li data-row="1" data-col="2" data-sizex="2" data-sizey="1"></li>
+				        <li data-row="2" data-col="2" data-sizex="2" data-sizey="2">last</li>
+
+				    </ul>
+				</div>
+			</section>
+			
+		</div>
+
+		<!-- <script type="text/javascript" src= "script.js">
+		//attempt at calling charting function
+			var data = {
+			labels : ["January","February","March","April","May","June"],
+			datasets : [
+				{
+					fillColor : "rgba(172,194,132,0.4)",
+					strokeColor : "#ACC26D",
+					pointColor : "#fff",
+					pointStrokeColor : "#9DB86D",
+					responsive:true,
+					maintainAspectRatio: false,
+					data : [203,156,99,251,305,247]
+				}
+			]
+		}
+
+		var chart = createChart(data, 'line', 'mycanvas-line');
+		</script> -->
+
+
+<!-- 		<script type="text/javascript">
+					var data = {
+			labels : ["January","February","March","April","May","June"],
+			datasets : [
+				{
+					fillColor : "rgba(172,194,132,0.4)",
+					strokeColor : "#ACC26D",
+					pointColor : "#fff",
+					pointStrokeColor : "#9DB86D",
+					responsive:true,
+					maintainAspectRatio: false,
+					data : [203,156,99,251,305,247]
+				}
+			]
+		}
+		    var ctx = document.getElementById('mycanvas-line').getContext('2d');
+		   	
+		    var line = new Chart(ctx, {type: "bar", data: data});
+		  
+		</script> -->
+		<script type="text/javascript" src= "script.js" charster="utf-8"></script>
+</body>
+</html>
