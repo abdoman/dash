@@ -1,9 +1,10 @@
 body{
-	height: 100%;
-	margin-left: 20px;
+	
+	-webkit-font-smoothing: antialiased;
+	
 }
 
-li{
+li, ol{
 	list-style: none;
 }
 
@@ -34,12 +35,16 @@ hr {
 canvas{
 	background: #fff;
 	display: block;
-	
+
 }
 
 
 
 /* Gridster styles */
+
+.gridster{
+
+}
 .demo {
     margin: 3em 0;
     padding: 7.5em 0 5.5em;
