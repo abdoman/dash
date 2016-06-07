@@ -1,14 +1,19 @@
+var gridster;
 var main = function(){
 	$('#add-button').click(function(){
 			alert("hey");
 	});
 	
-	var gridster = $('.gridster ul').gridster({
-		widget_margins: [1,1],
+	 gridster = $('.gridster ul').gridster({
+		widget_margins: [30,30],
 		widget_base_dimentions: [140,140],
-		max_cols: 4,
+		min_cols: 3	,
 		resize: {enabled:true}
 		}).data(gridster);
+
+	 	var canvas = document.getElementById("mycanvas-line");
+  		//canvas.width = $("#parent-to-can").width();
+  		//canvas.height = $("#parent-to-can").height();
 
 }
 

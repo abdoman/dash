@@ -1,6 +1,5 @@
 body{
 	height: 100%;
-	width: 90%;
 	margin-left: 20px;
 }
 
@@ -32,6 +31,11 @@ hr {
 
 }
 
+canvas{
+	background: #fff;
+	display: block;
+	
+}
 
 
 

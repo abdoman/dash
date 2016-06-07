@@ -30,15 +30,22 @@
 				<div class="gridster">
 				    <ul>
 				        <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-				        		<div class = "graph span6">
+				        			
 									<canvas id = "mycanvas-line" width=326 height=240 ></canvas>
-								</div>
+								
 						</li>
-				        <li data-row="1" data-col="2" data-sizex="1" data-sizey="1"></li>
+				         
+				        <li data-row="2" data-col="1" data-sizex="1" data-sizey="1"></li>
 				        <li data-row="3" data-col="1" data-sizex="1" data-sizey="1"></li>
 
 				        <li data-row="1" data-col="2" data-sizex="2" data-sizey="1"></li>
-				        <li data-row="2" data-col="2" data-sizex="2" data-sizey="2">last</li>
+				        <li data-row="2" data-col="2" data-sizex="2" data-sizey="2"></li>
+
+				        <li data-row="1" data-col="3" data-sizex="1" data-sizey="1"></li>
+				        <li data-row="2" data-col="3" data-sizex="2" data-sizey="1"></li>
+				        <li data-row="3" data-col="3" data-sizex="1" data-sizey="1"></li>
+
+				     
 
 				    </ul>
 				</div>
@@ -67,7 +74,7 @@
 		</script> -->
 
 
-<!-- 		<script type="text/javascript">
+		<script type="text/javascript">
 					var data = {
 			labels : ["January","February","March","April","May","June"],
 			datasets : [
@@ -84,9 +91,9 @@
 		}
 		    var ctx = document.getElementById('mycanvas-line').getContext('2d');
 		   	
-		    var line = new Chart(ctx, {type: "bar", data: data});
+		    var line = new Chart(ctx, {type: "bar", data: data, options: {responsive:true, maintainAspectRatio:true}});
 		  
-		</script> -->
+		</script>
 		<script type="text/javascript" src= "script.js" charster="utf-8"></script>
 </body>
 </html>
