@@ -11,6 +11,7 @@ var main = function(){
 		
 		}).data('gridster');
 
+	 $('input[name="daterange"]').daterangepicker();
 	 	var canvas = document.getElementById("mycanvas-line");
   		//canvas.width = $("#parent-to-can").width();
   		//canvas.height = $("#parent-to-can").height();

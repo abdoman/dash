@@ -2,13 +2,18 @@
 <html>
 <head>
 	<title>BI-dashboard</title>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src= "assets/jquery.gridster.js"></script>
 	<script type="text/javascript" src= "Chart.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel= "stylesheet" type= "text/css" href= "style.css">
 	<link rel = "stylesheet" type = "text/css" href = "assets/css/jquery.gridster.min.css">
+	<!-- Include Date Range Picker -->
+	<script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
 
 </head>
 <body>
@@ -22,7 +27,7 @@
 		</header>
 		<hr>
 		<div class = "row">
-			<button type="button" class="btn btn-success" id= "add-button"><b>+</b> Add Chart</button>
+			<input type="text" name="daterange"  id = "picker"/>
 		</div>
 		<hr>
 		
